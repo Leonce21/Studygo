@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<nav>
+  <div class="wrapper">
+    <div class="logo"><a href="#"><img src="../../../assets/img/logo.png" alt="logo" width="200px"></a></div>
+    <input type="radio" name="slider" id="menu-btn">
+    <input type="radio" name="slider" id="close-btn">
+    <ul class="nav-links">
+      <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+      <li><a href="#">Home</a></li>
+      <li><a routerLink="about">About</a></li>
+      <li>
+        <a href="#" class="desktop-item">Certifications</a>
+        <input type="checkbox" id="showDrop">
+        <label for="showDrop" class="mobile-item">Certifications</label>
+        <ul class="drop-menu">
+          <li><a href="#">Certification 1</a></li>
+          <li><a href="#">Certification 2</a></li>
+          <li><a href="#">Certification 3</a></li>
+          <li><a href="#">Certification 4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="menu" class="desktop-item">Courses</a>
+        <input type="checkbox" id="showMega">
+        <label for="showMega" class="mobile-item">Courses</label>
+        <div class="mega-box">
+          <div class="content">
+            <div class="row">
+              <img src="https://img.freepik.com/free-vector/hand-drawn-online-tutor-illustration_52683-146749.jpg?t=st=1711543818~exp=1711547418~hmac=2d8a1be670d1648264871278abd55b8b32a76c10854352a8d2fbd5155dd9d206&w=826" alt="">
+            </div>
+            <div class="row">
+              <header>Information Technology</header>
+              <ul class="mega-links">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+              </ul>
+            </div>
+            <div class="row">
+              <header>Marketing</header>
+              <ul class="mega-links">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+              </ul>
+            </div>
+            <div class="row">
+              <header>Business</header>
+              <ul class="mega-links">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a routerLink="contact">Contact</a></li>
+      <li><a routerLink="signin">Login</a></li>
+    </ul>
+    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+  </div>
+</nav>
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink=""><img src="../../../assets/img/logo.png" alt="logo" width="200px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink=""  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="menu" routerLinkActive="active-link">Category</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about" routerLinkActive="active-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact" routerLinkActive="active-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="signin" routerLinkActive="active-link">Sign in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="register" routerLinkActive="active-link">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->

@@ -1,0 +1,12 @@
+{
+  "signup": [
+    {
+      "fname":"fotso",
+      "lname":"fotso",
+      "email":"leonce@gmail.com",
+      "phone":"123456789",
+      "password":"123456",
+      "id":1
+    }
+  ]
+}

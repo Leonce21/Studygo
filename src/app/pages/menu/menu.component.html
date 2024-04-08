@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<div class="container">
+
+    <div class="card-wrapper row">
+
+        <div class="card" *ngFor="let fd of subjectData">
+
+            <div class="card-image">
+                <img src="{{fd.subjectImg}}" alt="profile one" width="350px" height="300px">
+            </div>
+
+            <ul class="social-icons">
+                <li>            
+                    <a [routerLink]="['/menu',fd.id]" class="btn btn-outline-primary">
+                        enroll
+                    </a>
+
+                </li>
+                
+            </ul>
+
+            <div class="details">
+                <h3>{{fd.subjectName}}
+                    <br>
+                    <span class="job-title">{{fd.subjectDetails}}</span>
+                </h3>
+            </div>
+        </div>
+    </div><!-- end box wrapper -->
+</div><!-- END container -->
