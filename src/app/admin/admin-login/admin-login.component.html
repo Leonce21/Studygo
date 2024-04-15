@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<div class="wrapper">
+    <div class="inner">
+        <div class="col-md-12">
+            <form name="form" #tf="ngForm" (ngSubmit)="tf.form.valid && onSubmitSignIn()">
+                <h3>Login</h3>
+
+                <div class="form-holder">
+                    <span class="bi bi-envelope"></span>
+                    <input type="email" name="userEmail" class="form-control" id="username"
+                        placeholder="Enter your email" [(ngModel)]="signInFormValue.userEmail" #userEmail="ngModel"
+                        required email />
+                    <!-- <small *ngIf="userEmail.invalid && (userEmail.dirty || userEmail.touched)" class="text-danger">
+                        <div *ngIf="userEmail.errors?.['required']">email is required</div>
+                        <div *ngIf="userEmail.errors?.['userEmail']">
+                            email should be valid
+                        </div>
+                    </small> -->
+                </div>
+
+                <div class="form-holder">
+                    <span class="bi bi-lock"></span>
+                    <input type="password" name="userPassword" class="form-control" id="password"
+                        placeholder="Enter your password" [(ngModel)]="signInFormValue.userPassword"
+                        #userPassword="ngModel" togglePassword />
+                    <!-- <small *ngIf="
+                        userPassword.invalid &&
+                        (userPassword.dirty || userPassword.touched)
+                        " class="text-danger">
+                        <div *ngIf="userPassword.errors?.['required']">
+                            Password is required
+                        </div>
+                    </small> -->
+                </div>
+
+                <button class="btn" aria-label="login">login</button>
+
+                <div class="text-center mt-5">
+                    <p>Not a member? <a routerLink="/sign-up">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,12 +1,89 @@
 {
-  "signup": [
+  "user": [
     {
-      "fname":"fotso",
-      "lname":"fotso",
-      "email":"leonce@gmail.com",
-      "phone":"123456789",
-      "password":"123456",
-      "id":1
+      "id": "16fd",
+      "email": "leoncefotso59@gmail.com",
+      "language": "fr",
+      "name": "Fotso Bernard leonce",
+      "password": "1234",
+      "confirmPassword": "1234",
+      "role": "buyer"
+    },
+    {
+      "id": "7c53",
+      "email": "bernardleonce59@gmail.com",
+      "language": "eng",
+      "name": "tst bernard tst",
+      "password": "1234",
+      "confirmPassword": "1234",
+      "role": "buyer"
+    },
+    {
+      "id": "be3a",
+      "email": "john@gmail.com",
+      "language": "fr",
+      "name": "john",
+      "password": "1234",
+      "confirmPassword": "1234",
+      "role": "seller"
+    },
+    {
+      "id": "beqa",
+      "email": "admin@gmail.com",
+      "language": "fr",
+      "name": "admin",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "role": "admin"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "computer networking",
+      "uploadphoto": "https://images.unsplash.com/photo-1604005366359-2f8f2a044336?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productdesc": "his course covers advanced topics in Computer Networking such as Software-Defined Networking (SDN), Data Center Networking and Content Distribution.",
+      "status": "publish"
+    },
+    {
+      "id": "2",
+      "name": "Data analysis",
+      "uploadphoto": "https://images.unsplash.com/photo-1588600878108-578307a3cc9d?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productdesc": "In this course, you will learn to think like a data scientist and ask questions of your data. You will use interactive features in MATLAB to extract subsets of data and to compute statistics on groups of related data.",
+      "status": "publish"
+    },
+    {
+      "id": "3",
+      "name": "SEO",
+      "uploadphoto": "https://images.unsplash.com/photo-1599658880436-c61792e70672?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productdesc": "SEO",
+      "status": "publish"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": "1",
+      "sellerId": "2",
+      "product": {
+        "id": "1",
+        "name": "computer networking",
+        "uploadphoto": "https://images.unsplash.com/photo-1604005366359-2f8f2a044336?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "productdesc": "This course covers advanced topics in Computer Networking such as Software-Defined Networking (SDN), Data Center Networking and Content Distribution.",
+        "status": "publish"
+      }
+    },
+    {
+      "id": "2",
+      "userId": "2",
+      "sellerId": "2",
+      "product": {
+        "id": "2",
+        "name": "SEO",
+        "uploadphoto": "https://images.unsplash.com/photo-1604005366359-2f8f2a044336?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "productdesc": "This course covers advanced topics in Computer Networking such as Software-Defined Networking (SDN), Data Center Networking and Content Distribution.",
+        "status": "publish"
+      }
     }
   ]
 }

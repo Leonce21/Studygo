@@ -1,97 +1,97 @@
 <!DOCTYPE html>
-<nav>
-  <div class="wrapper">
-    <div class="logo"><a href="#"><img src="../../../assets/img/logo.png" alt="logo" width="200px"></a></div>
-    <input type="radio" name="slider" id="menu-btn">
-    <input type="radio" name="slider" id="close-btn">
-    <ul class="nav-links">
-      <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-      <li><a href="#">Home</a></li>
-      <li><a routerLink="about">About</a></li>
-      <li>
-        <a href="#" class="desktop-item">Certifications</a>
-        <input type="checkbox" id="showDrop">
-        <label for="showDrop" class="mobile-item">Certifications</label>
-        <ul class="drop-menu">
-          <li><a href="#">Certification 1</a></li>
-          <li><a href="#">Certification 2</a></li>
-          <li><a href="#">Certification 3</a></li>
-          <li><a href="#">Certification 4</a></li>
-        </ul>
-      </li>
-      <li>
-        <a routerLink="menu" class="desktop-item">Courses</a>
-        <input type="checkbox" id="showMega">
-        <label for="showMega" class="mobile-item">Courses</label>
-        <div class="mega-box">
-          <div class="content">
-            <div class="row">
-              <img src="https://img.freepik.com/free-vector/hand-drawn-online-tutor-illustration_52683-146749.jpg?t=st=1711543818~exp=1711547418~hmac=2d8a1be670d1648264871278abd55b8b32a76c10854352a8d2fbd5155dd9d206&w=826" alt="">
-            </div>
-            <div class="row">
-              <header>Information Technology</header>
-              <ul class="mega-links">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
-              </ul>
-            </div>
-            <div class="row">
-              <header>Marketing</header>
-              <ul class="mega-links">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
-              </ul>
-            </div>
-            <div class="row">
-              <header>Business</header>
-              <ul class="mega-links">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li><a routerLink="contact">Contact</a></li>
-      <li><a routerLink="signin">Login</a></li>
-    </ul>
-    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-  </div>
-</nav>
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" routerLink=""><img src="../../../assets/img/logo.png" alt="logo" width="200px"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand me-auto" href="#"><img src="../../../assets/img/logo.png" alt="logo" width="170px"></a>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../../../assets/img/logo.png" alt="logo" width="170px"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 login">
           <li class="nav-item">
-            <a class="nav-link" routerLink=""  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
+            <a class="nav-link mx-lg-2" aria-current="page" routerLink="/home">Home</a>
+          </li>
+
+          <li class="nav-item drop">
+            <a href="#" class="nav-link mx-lg-2" routerLink="/menu">Courses &dtrif;</a>
+            <ul class="drop-list">
+              <li><a href="#">Networking</a></li>
+              <li><a href="#">Web design</a></li>
+              <li><a href="#">Artificial Intelligence</a></li>
+              <li><a href="#">Web Content</a></li>
+
+              <li class="nav-item drop-box">
+                <a href="#">Digital Marketing &dtrif;</a>
+                <ul class="drop-list-box">
+                  <li><a href="#">Ads</a></li>
+                  <li><a href="#">Content Creation</a></li>
+                  <li><a href="#">Audience</a></li>
+                </ul> 
+              </li>
+
+              <li><a href="#">social Network</a></li>
+              <li><a href="#">Human Resource</a></li>
+              <li><a href="#">Wordpress</a></li>
+              <li><a href="#">Cyber Security</a></li>
+              <li><a href="#">Entrepreneur</a></li>
+            </ul> 
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="menu" routerLinkActive="active-link">Category</a>
+            <a class="nav-link mx-lg-2" routerLink="/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="about" routerLinkActive="active-link">About</a>
+            <a class="nav-link mx-lg-2 active" routerLink="/contact">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="contact" routerLinkActive="active-link">Contact</a>
+          <li class="nav-item" *ngIf="user_role == 'buyer'">
+            <a class="nav-link mx-lg-2" routerLink="/buyer-dashboard">Order</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="signin" routerLinkActive="active-link">Sign in</a>
+          <li class="nav-item" *ngIf="user_role == 'seller'">
+            <a class="nav-link mx-lg-2" routerLink="/seller/product">Product</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="register" routerLinkActive="active-link">Register</a>
+          <li class="nav-item" *ngIf="user_role == 'admin'">
+            <a class="nav-link mx-lg-2" routerLink="/admin/product">All Product</a>
+          </li>
+          <li class="nav-item" *ngIf="user_role == 'admin'">
+            <a class="nav-link mx-lg-2" routerLink="/buyer-dashboard">All Order</a>
+          </li>
+          <li class="nav-item" *ngIf="user_role == 'admin'">
+            <a class="nav-link mx-lg-2" routerLink="/admin/user">Users</a>
+          </li>
+          <li class="nav-item drop">
+            <a href="#" class="nav-link mx-lg-2">Language &dtrif;</a>
+            <ul class="drop-list">
+              <li><a href="#">English</a></li>
+              <li><a href="#">French</a></li>
+              
+            </ul> 
           </li>
         </ul>
+        
       </div>
     </div>
-  </nav> -->
+    <ul class="login" *ngIf="!logged_in">
+      <li>
+        <a class="nav-link login-button" routerLink="/sign-in">Login</a>
+      </li>
+      <!-- <li>
+        <a class="nav-link login-button" routerLink="/sign-up">Register</a>
+      </li> -->
+    </ul>
+    <ul class="login" *ngIf="logged_in">
+      <li>
+        <a class="nav-link" routerLink="/my-profile">Profile</a>
+      </li>
+      <li>
+        <a class="nav-link login-button" (click)="logout()">Log out</a>
+      </li>
+    </ul>
+
+    <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
