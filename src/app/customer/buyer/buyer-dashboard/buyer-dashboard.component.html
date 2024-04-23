@@ -1,1 +1,30 @@
-<p>buyer-dashboard works!</p>
+<div class="content">
+    <nav class="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="">Buyer</a></li>
+            <li class="breadcrumb-item"><a routerLink="/buyer-dashboard">products</a></li>
+        </ol>
+    </nav>
+    <div class="row">
+        <div class="col-sm-3 product" *ngFor="let product of all_products">
+            <div class="card">
+                <img src="../../../../assets/img/bannerimg.jpg" alt="{{product.name}}" class="card-img-top">
+                <div class="card-body shadow">
+                    <h4 class="card-title">{{product.name}}</h4>
+                    <p class="product-details">
+                        <span class="float-left">
+                            <strong>MRP</strong>: <del>product mrp</del>
+                        </span>
+                        <span class="float-right">
+                            <strong>DP</strong>product dp
+                        </span>
+                    </p>
+                    <br>
+                    <p class="card-text product-desc">{{product.productdesc}}</p>
+                    <button (click)="addtoCart()" class="btn btn-primary float-left">Add to cart</button>
+                    <button (click)="buyProduct(product.id)" class="btn btn-primary float-right">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

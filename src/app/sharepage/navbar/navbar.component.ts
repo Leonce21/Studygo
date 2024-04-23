@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
   logged_in: boolean = false;
   language: string = 'English';
   user_role!: any;
+  user: string = 'userweb';
 
   constructor(
     private router:Router,
@@ -30,6 +31,7 @@ export class NavbarComponent implements OnInit {
       this.logged_in = true
     }
   }
+
   logout(){
     sessionStorage.removeItem("user_session_id");
     sessionStorage.removeItem("role");

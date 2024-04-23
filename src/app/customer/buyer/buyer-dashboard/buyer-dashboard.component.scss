@@ -1,0 +1,50 @@
+
+.content{
+    margin: 30px;
+    nav{ 
+        margin-top: 100px;
+    }
+
+    .row{
+        .product{
+            margin-top: 1rem;
+        }
+
+        .card{
+            .card-body{
+                .product-details span{
+                    margin: 5px;
+                    padding: 2px;
+                    
+                }
+
+                .product-desc{
+                    height: 7rem;
+                    overflow: hidden;
+                    margin-top: -20px;
+                    margin-bottom: 20px;
+                    padding-bottom: 150px;
+                    text-overflow: ellipsis;
+                    
+                }
+
+                .card-title{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    
+                }
+
+                button{
+                    margin: 5px;    
+                }
+            }
+
+            img{
+                padding: 1rem;
+                
+            }
+        }
+    }
+}
+

@@ -1,1 +1,57 @@
-<p>checkout works!</p>
+<div class="content">
+    <nav class="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/buyer-dashboard">Buyer</a></li>
+            <li class="breadcrumb-item"><a >Checkout</a></li>
+        </ol>
+    </nav>
+    <div class="row">
+        <div class="col-md-8 product">
+            <div class="card">    
+                <div class="card-header">
+                    <h4 class="card-title">Product Details</h4>
+                </div>
+                <div class="card-body product-detail">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- <img src="{{individual_product.uploadPhoto}}" alt="{{individual_product.name}}" class="card-img-top"> -->
+                            <img src="../../../../assets/img/bannerimg.jpg" alt="" class="card-img-top">
+                        </div>
+                        <div class="col-md-8">
+                            <h4 class="card-title">{{individual_product.productname}}</h4>
+                            <p class="card-text product-desc">{{individual_product.productdesc}}</p>
+                            <p>
+                                <span class="float-left">
+                                    <strong>MRP</strong>: <del>product mrp</del>
+                                </span>
+                                <span class="float-right">
+                                    <strong>DP</strong>product dp
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Overview
+                </div>
+                <div class="card-body">
+                    <div>
+                        <p><i class="fas fa-calendar"></i>Weeks</p>
+                        <p><i class="fas fa-clock"></i>Weeks</p>
+                        <p>Weeks</p>
+                    </div>
+                    <button (click)="placeOrder()" class="btn btn-primary">Purchase</button>
+                    <div class="alert alert-info" role="alert">
+                        <strong>Note:</strong>
+                        Thanks for your purchase, We hope to see you soon
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</div>

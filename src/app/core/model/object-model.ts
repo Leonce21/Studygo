@@ -10,9 +10,9 @@ export class User {
 
 export class Product {
     id!:number;
-    name!: string;
+    productname!: string;
     uploadPhoto!:string;
-    desc!:string;
+    productdesc!:string;
     status!:boolean;
 }
 
@@ -20,7 +20,7 @@ export class Order {
     id!:number;
     userId!: number;
     sellerId!: number;
-    product!: string;
+    product!: Product;
     dateTime!:string;
 }
 

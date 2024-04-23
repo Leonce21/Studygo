@@ -1,1 +1,68 @@
-<p>seller-dashboard works!</p>
+<br>
+<div class="jumbotron p-3 p-md-2 text-white rounded bg-dark ">
+    <div class="col-md-12 px-0 mt-8">
+        <h3 class="display-4 font-semibold text-center">Welcome to admin dashboard</h3>
+        <p class="lead my-3 text-center">Seller can manage products and orders</p>
+    </div>
+</div>
+
+<div class="row mb-2">
+    <div class="col-md-6" (click)="sellerOrderDashboard()">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-d shadow small position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Order</strong>
+                <h3 class="mb-0">Manage Orders
+                    <p class="float-end small">Last order: {{last_order_date}}</p>
+                </h3>
+                
+                <div class="progressbar-div">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25">
+                            Pending: 
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25">
+                            Processed: 
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25">
+                            Rejected: 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="col-md-6" (click)="sellerProductDashboard()">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-d shadow small position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Products</strong>
+                <h3 class="mb-0">Manage Products
+                    <p class="float-end small">Last product update: <strong>20 april 2024</strong></p>
+                </h3>
+                
+                <div class="progressbar-div">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25">
+                            Publish Product: {{publish_product}}
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25">
+                            Inactive Products: {{inactive_product}}
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25">
+                            Draft Product: {{draft_product}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

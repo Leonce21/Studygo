@@ -1,33 +1,6 @@
 {
   "user": [
     {
-      "id": "16fd",
-      "email": "leoncefotso59@gmail.com",
-      "language": "fr",
-      "name": "Fotso Bernard leonce",
-      "password": "1234",
-      "confirmPassword": "1234",
-      "role": "buyer"
-    },
-    {
-      "id": "7c53",
-      "email": "bernardleonce59@gmail.com",
-      "language": "eng",
-      "name": "tst bernard tst",
-      "password": "1234",
-      "confirmPassword": "1234",
-      "role": "buyer"
-    },
-    {
-      "id": "be3a",
-      "email": "john@gmail.com",
-      "language": "fr",
-      "name": "john",
-      "password": "1234",
-      "confirmPassword": "1234",
-      "role": "seller"
-    },
-    {
       "id": "beqa",
       "email": "admin@gmail.com",
       "language": "fr",
@@ -35,26 +8,94 @@
       "password": "123456789",
       "confirmPassword": "123456789",
       "role": "admin"
+    },
+    {
+      "email": "peter@gmail.com",
+      "language": "spain",
+      "name": "BTLeonce",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "role": "seller",
+      "id": "18bd"
+    },
+    {
+      "email": "leonce@gmail.com",
+      "language": "fr",
+      "name": "fotso",
+      "password": "1234",
+      "confirmPassword": "1234",
+      "role": "seller",
+      "id": "e88a"
+    },
+    {
+      "id": "2a40",
+      "email": "david@gmail.com",
+      "language": "eng",
+      "name": "david",
+      "password": "123",
+      "confirmPassword": "123",
+      "role": "buyer"
+    },
+    {
+      "id": "929d",
+      "email": "john59@gmail.com",
+      "language": "fr",
+      "name": "john",
+      "password": "john",
+      "confirmPassword": "john",
+      "role": "seller"
+    },
+    {
+      "id": "318f",
+      "email": "brad12gmail.com",
+      "language": "eng",
+      "name": "brad",
+      "password": "brad",
+      "confirmPassword": "brad",
+      "role": "seller"
+    },
+    {
+      "email": "bob@gmail.com",
+      "language": "",
+      "name": "bob1",
+      "password": "",
+      "confirmPassword": "",
+      "role": "",
+      "id": "2779"
     }
   ],
   "products": [
     {
       "id": "1",
-      "name": "computer networking",
+      "productname": "computer networking",
       "uploadphoto": "https://images.unsplash.com/photo-1604005366359-2f8f2a044336?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "productdesc": "his course covers advanced topics in Computer Networking such as Software-Defined Networking (SDN), Data Center Networking and Content Distribution.",
       "status": "publish"
     },
     {
       "id": "2",
-      "name": "Data analysis",
+      "productname": "Data analysis",
       "uploadphoto": "https://images.unsplash.com/photo-1588600878108-578307a3cc9d?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "productdesc": "In this course, you will learn to think like a data scientist and ask questions of your data. You will use interactive features in MATLAB to extract subsets of data and to compute statistics on groups of related data.",
-      "status": "publish"
+      "status": "inactive"
     },
     {
       "id": "3",
-      "name": "SEO",
+      "productname": "SEO",
+      "uploadphoto": "https://images.unsplash.com/photo-1599658880436-c61792e70672?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productdesc": "SEO",
+      "status": "publish"
+    },
+    {
+      "id": "4",
+      "productname": "SEO",
+      "uploadphoto": "https://images.unsplash.com/photo-1599658880436-c61792e70672?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productdesc": "SEO",
+      "status": "publish"
+    },
+    {
+      "id": "5",
+      "productname": "SEO",
       "uploadphoto": "https://images.unsplash.com/photo-1599658880436-c61792e70672?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "productdesc": "SEO",
       "status": "publish"
@@ -84,6 +125,42 @@
         "productdesc": "This course covers advanced topics in Computer Networking such as Software-Defined Networking (SDN), Data Center Networking and Content Distribution.",
         "status": "publish"
       }
+    },
+    {
+      "id": 0,
+      "userId": null,
+      "sellerId": 2,
+      "product": {
+        "id": "1",
+        "name": "computer networking",
+        "productdesc": "his course covers advanced topics in Computer Networking such as Software-Defined Networking (SDN), Data Center Networking and Content Distribution.",
+        "status": "publish"
+      },
+      "dateTime": "4/20/2024"
+    },
+    {
+      "id": 0,
+      "userId": null,
+      "sellerId": 2,
+      "product": {
+        "id": "3",
+        "name": "SEO",
+        "productdesc": "SEO",
+        "status": "publish"
+      },
+      "dateTime": "4/20/2024"
+    },
+    {
+      "id": 0,
+      "userId": null,
+      "sellerId": 2,
+      "product": {
+        "id": "3",
+        "name": "SEO",
+        "productdesc": "SEO",
+        "status": "publish"
+      },
+      "dateTime": "4/20/2024"
     }
   ]
 }

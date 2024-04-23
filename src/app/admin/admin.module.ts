@@ -7,8 +7,7 @@ import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AdminDashboardComponent,
-    UserCrudComponent,
+    AdminDashboardComponent
   ],
   imports: [
     CommonModule,

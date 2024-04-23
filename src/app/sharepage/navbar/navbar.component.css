@@ -1,3 +1,7 @@
+/* .navbar .container img{
+  border: 1px solid red;
+  margin-left: -10px;
+} */
 .login {
   display: flex;
   /* flex-direction: row; */
@@ -46,7 +50,7 @@
 .navbar{
   background-color: #a5a5a5;
   height: 70px;
-  margin: 20px;
+  margin: 10px;
   border-radius: 16px;
   padding: 0.5rem;
 }

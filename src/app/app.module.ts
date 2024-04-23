@@ -14,7 +14,6 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './pages/menu/menu.component';
-import { MenupageComponent } from './pages/menupage/menupage.component';
 import { FooterComponent } from './sharepage/footer/footer.component';
 import { NavbarComponent } from './sharepage/navbar/navbar.component';
 import { ProductComponent } from './product/product.component';
@@ -22,7 +21,12 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { PageNotFoundComponent } from './sharepage/page-not-found/page-not-found.component';
 import { provideRouter } from '@angular/router';
 import { SigninSignupComponent } from './customer/signin-signup/signin-signup.component';
-import { AdminLoginComponent } from './admin/admin-login/admin-login.component'; 
+import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
+import { UserCrudComponent } from './admin/user-crud/user-crud.component'; 
+import { BuyerDashboardComponent } from './customer/buyer/buyer-dashboard/buyer-dashboard.component';
+import { CheckoutComponent } from './customer/buyer/checkout/checkout.component';
+import { SellerDashboardComponent } from './customer/seller/seller-dashboard/seller-dashboard.component';
+;
 
 
 
@@ -32,16 +36,18 @@ import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
     AppComponent,
     FooterComponent,
     NavbarComponent,
-    HomeComponent,
-    MenuComponent,
     AboutComponent,
     ContactComponent,
-    MenupageComponent,
     ProductComponent,
     UserProfileComponent,
     PageNotFoundComponent,
     SigninSignupComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    UserCrudComponent,
+    UserProfileComponent,
+    BuyerDashboardComponent,
+    CheckoutComponent,
+    SellerDashboardComponent
   ],
   imports: [
     BrowserModule,

@@ -23,17 +23,17 @@ export class AdminService {
     return this.apiService.get(this.product_url);
   }
 
-  allUser(){
+  allUser():Observable<any>{
     return this.apiService.get(this.all_user);
   }
 
   addUSer(user_dto:any){
-    return this.apiService.post(this.user_url, user_id);
+    return this.apiService.post(this.user_url, user_dto);
   }
 
   //get data of individual user
   singleUser(user_id:any){
-    return this.apiService.get(this.user_url, user_id);
+    return this.apiService.get(this.user_url+user_id);
   }
 
   //update data of individual user

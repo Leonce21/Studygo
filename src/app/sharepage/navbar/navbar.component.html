@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg fixed-top">
+  <a class="navbar-brand me-auto" routerLink="/home"><img src="../../../assets/img/logo.png" alt="logo" width="130px"></a>
   <div class="container">
-    <a class="navbar-brand me-auto" href="#"><img src="../../../assets/img/logo.png" alt="logo" width="170px"></a>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
@@ -11,17 +11,38 @@
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 login">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link mx-lg-2" aria-current="page" routerLink="/home">Home</a>
-          </li>
+          </li> -->
 
-          <li class="nav-item drop">
-            <a href="#" class="nav-link mx-lg-2" routerLink="/menu">Courses &dtrif;</a>
+          <li class="nav-item drop" *ngIf="user == 'userweb'">
+            <a href="#" class="nav-link mx-lg-2" routerLink="/menu">Explore &dtrif;</a>
             <ul class="drop-list">
-              <li><a href="#">Networking</a></li>
-              <li><a href="#">Web design</a></li>
-              <li><a href="#">Artificial Intelligence</a></li>
-              <li><a href="#">Web Content</a></li>
+              <li class="nav-item drop-box">
+                <a href="#">Programming &dtrif;</a>
+                <ul class="drop-list-box">
+                  <li><a href="#">Introduction to Python Programming</a></li>
+                  <li><a href="#">Web Development Bootcamp</a></li>
+                  <li><a href="#">JavaScript for Beginners</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item drop-box">
+                <a href="#">Data Science &dtrif;</a>
+                <ul class="drop-list-box">
+                  <li><a href="#">Data Science and Machine Learning Bootcamp</a></li>
+                  <li><a href="#">Introduction to Data Analysis with Python</a></li>
+                  <li><a href="#">SQL for Data Science</a></li>
+                </ul> 
+              </li>
+
+              <li>
+                <a href="#">Artificial Intelligence &dtrif;</a>
+              </li>
+
+              <li>
+                <a href="#">Web Content</a>
+              </li>
 
               <li class="nav-item drop-box">
                 <a href="#">Digital Marketing &dtrif;</a>
@@ -52,22 +73,22 @@
             <a class="nav-link mx-lg-2" routerLink="/seller/product">Product</a>
           </li>
           <li class="nav-item" *ngIf="user_role == 'admin'">
-            <a class="nav-link mx-lg-2" routerLink="/admin/product">All Product</a>
+            <a class="nav-link mx-lg-2" routerLink="/admin/product">Product</a>
           </li>
           <li class="nav-item" *ngIf="user_role == 'admin'">
-            <a class="nav-link mx-lg-2" routerLink="/buyer-dashboard">All Order</a>
+            <a class="nav-link mx-lg-2" routerLink="/buyer-dashboard">Order</a>
           </li>
           <li class="nav-item" *ngIf="user_role == 'admin'">
             <a class="nav-link mx-lg-2" routerLink="/admin/user">Users</a>
           </li>
-          <li class="nav-item drop">
+          <!-- <li class="nav-item drop">
             <a href="#" class="nav-link mx-lg-2">Language &dtrif;</a>
             <ul class="drop-list">
               <li><a href="#">English</a></li>
               <li><a href="#">French</a></li>
               
             </ul> 
-          </li>
+          </li> -->
         </ul>
         
       </div>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { OrderDetailsService } from 'src/app/services/order-details.service';
+
 
 @Component({
   selector: 'app-menu',
@@ -8,10 +8,10 @@ import { OrderDetailsService } from 'src/app/services/order-details.service';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private service:OrderDetailsService) { }
+  constructor() { }
   subjectData:any;
   ngOnInit(): void {
-    this.subjectData = this.service.subjectDetails;
+   
   }
 
 }
